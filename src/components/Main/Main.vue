@@ -1,5 +1,5 @@
-<template src="./Header.html"></template>
-<style src="./Header.scss" lang="scss" scoped>
+<template src="./Main.html"></template>
+<style src="./Main.scss" lang="scss" scoped>
 </style>
 
 <script lang="ts">
@@ -13,11 +13,7 @@ import axios from 'axios'
     components: {
     }
 })
-export default class Header extends Vue {
-    store = useStore(key)
-
-   ChangeMenu(Menu: string){
-    this.store.state.Menu = Menu
-   }
+export default class Main extends Vue {
+   
 }
 </script>
