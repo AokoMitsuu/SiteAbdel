@@ -1,0 +1,119 @@
+
+{
+    "_Missing" : ["MyAdminPanel", "MyBBS", "MyGameWorld"],
+    "store":"{{store.state.TextConfig[store.state.User.lang].Submit}}",
+
+    "fr":{
+        "Login": "Login",
+        "Password": "Mot de passe",
+        "Submit": "Valider",
+
+        "Modules": "Modules",
+        "ApkDl": "Télécharger L'APK",
+        
+        "GeneralSettings" : "Paramètres généraux",
+        "PasswordConfirm" : "Confimer le Password",
+        "DefaultModule" : "Module par default",
+        "Save" : "Sauvegarder",
+        "ModulesDisposition": "Modules Disposition",
+        
+        "Episode" : "Episode",
+        "LastEpisode": "N° du dernier episode vu",
+        "Scan" : "Scan",
+        "LastScan": "N° du dernier scan vu",
+        "AlternatifName": "Nom Alternatif",
+        "IdAnilist" : "Id Anilist",
+        "AnimeSiteUrl": "Nom du site web + url",
+        "MangaSiteUrl": "Langue + Nom du site web + url",
+        "Date":"Date",
+        "Frequency": "Fréquence (J)",
+
+        "Statut": "Statut",
+        "StatutWatch": "En cour de visionnage",
+        "StatutRead": "En cour de lecture",
+        "StatutStoped": "Arreter",
+        "StatutOnHold": "En Pause",
+        "StatutPlanToWatch": "Prévu de regarder",
+        "StatutPlanToRead": "Prévu de lire",
+        "StatutFinish": "Fini",
+
+        "NotToDate": "Pas à jour",
+        "UpToDate": "A jour",
+        "WasToDate": "Anciennement à jour",
+
+        "DoCheck": "A checker",
+
+        "MangaCurrently":"Mangas du Moment",
+        "AnimeCurrently":"Anime du Moment",
+
+        "Add": "Ajouter",
+        "Update":"Mettre a jour",
+        "Delete":"Suprimer",
+        "Close":"Fermer",
+
+        "Shortcut": "Racourcis",
+        "Name": "Nom",
+        "Link": "Lien",
+
+        "BbsEdit" : "Editer la bdd de bbs",
+        "BbsAddUnit": " Ajouter un Perso",
+        "BbsAddResu": " Ajouter un Resu"
+    },
+
+    "eng":{
+        "Login": "Login",
+        "Password": "Password",
+        "Submit": "Submit",
+
+        "Modules": "Modules",
+        "ApkDl": "Download Apk",
+
+        "generalSettings" : "General settings",
+        "PasswordConfirm" : "Confirm password",
+        "DefaultModule" : "Default Module",
+        "Save" : "Save",
+        "ModulesDisposition": "Modules Disposition",
+
+        "Episode" : "Episode",
+        "LastEpisode": "Last episode watched",
+        "Scan" : "Scan",
+        "LastScan": "Last episode readed",
+        "AlternatifName": "Alternatif Name",
+        "IdAnilist" : "Id Anilist",
+        "AnimeSiteUrl": "Site name + Url",
+        "MangaSiteUrl": "Langue + Site name + Url",
+        "Date":"Date",
+        "Frequency": "Frequency (J)",
+
+        "Statut": "Statut",
+        "StatutWatch": "Watching",
+        "StatutRead": "Reading",
+        "StatutStoped": "Stoped",
+        "StatutOnHold": "On hold",
+        "StatutPlanToWatch": "Plan to watch",
+        "StatutPlanToRead": "Plan to read",
+        "StatutFinish": "Finish",
+
+        "NotToDate": "Not to date",
+        "UpToDate": "Up to date",
+        "WasToDate": "Was to date",
+
+        "DoCheck": "Do Check",
+
+        "MangaCurrently":"Curently Reading",
+        "AnimeCurrently":"Curently watching",
+
+        "Add": "Add",
+        "Update":"Update",
+        "Delete":"Delete",
+        "Close":"Close",
+
+        "Shortcut": "Shortcuts",
+        "Name": "Name",
+        "Link": "Link",
+
+        "BbsEdit" : "Edit bbs's bdd",
+        "BbsAddUnit": " Add Unit",
+        "BbsAddResu": " Add Resu"
+    }
+}

@@ -1,0 +1,30 @@
+---------------------------------------------------------------------------
+GameCenter.web : 
+
+Try Drag And Grop to change parent
+icon ABC... For alpha group (rename it)
+icon controler for opus
+Find Icon for other (maybe folder for franchise)
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+OtakuWorld.app: 
+
+unity app
+unity notif instead of discord
+database with post url / get url ...
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+unknow :
+
+portfolio
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+OtakuWorld.web && GameCenter.web : 
+
+admin mod (includ edit script and edit component if admin) otaku world too
+coockie
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+create mangatheque with game center system
+---------------------------------------------------------------------------
+group contact : SELECT id, GROUP_CONCAT( `id_user` SEPARATOR ',' ) FROM `modules_acces` GROUP BY id_module;
