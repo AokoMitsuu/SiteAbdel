@@ -1,5 +1,6 @@
 <template src="./Catalogue.html"></template>
 <style src="./Catalogue.scss" lang="scss" scoped>
+
 </style>
 
 <script lang="ts">
@@ -15,6 +16,19 @@ import ItemCard from './ItemCard/ItemCard.vue'
     }
 })
 export default class Catalogue extends Vue {
-   list = [{name:"vin", price:250, description:"test"},{name:"jus d orange", price:10, description:"test"},{name:"vodka", price:2500, description:"test"}]
+    list: any[] = [] 
+
+    async mounted() {
+        await axios.post(
+            'https://otakuworld.org/BackOtakuWorld/SiteAbdelTmp/Items.php',
+            {
+                Mode: "Fetch",
+            },
+        ).then((response) => {
+            this.list = (response.data as any[])
+        }).catch(function (error) {
+            console.log(error)
+        });
+    }
 }
 </script>

@@ -4,6 +4,7 @@
   <About v-if="store.state.Menu == 'About'"></About>
   <FindUs v-if="store.state.Menu == 'FindUs'"></FindUs>
   <Main v-if="store.state.Menu == 'Main'"></Main>
+  <Login v-if="store.state.Menu == 'Login'"></Login>
 </template>
 
 <script lang="ts">
@@ -15,6 +16,7 @@ import Main from './components/Main/Main.vue'
 import FindUs from './components/FindUs/FindUs.vue'
 import About from './components/About/About.vue'
 import Catalogue from './components/Catalogue/Catalogue.vue'
+import Login from './components/Login/Login.vue'
 import { computed } from 'vue'
 
 @Options({
@@ -23,7 +25,8 @@ import { computed } from 'vue'
     Catalogue,
     About,
     FindUs,
-    Main
+    Main,
+    Login
   },
 })
 export default class App extends Vue {
