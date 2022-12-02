@@ -26,10 +26,10 @@ export default class Login extends Vue {
                 this.Form = { Login: this.$cookies.get("User").Login, Password: this.$cookies.get("User").Password }
                 this.Login()
             } else {
-                this.store.state.User = null;
+                this.store.state.Menu = "Main"
             }
         } else {
-            this.store.state.User = null;
+            this.store.state.Menu = "Main"
         }
 
     }
@@ -48,10 +48,10 @@ export default class Login extends Vue {
                     console.log(this.store.state.User)
                     this.$cookies.set("User", this.Form)
                 } else {
-                    this.store.state.User = null;
+                    this.store.state.Menu = "Main"
                 }
             }).catch((error) => {
-                this.store.state.User = null;
+                this.store.state.Menu = "Main"
             });
     }
 }

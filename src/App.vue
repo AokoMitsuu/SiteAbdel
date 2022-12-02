@@ -1,10 +1,11 @@
 <template>
   <Header></Header>
   <Catalogue v-if="store.state.Menu == 'Catalogue'"></Catalogue>
-  <About v-if="store.state.Menu == 'About'"></About>
-  <FindUs v-if="store.state.Menu == 'FindUs'"></FindUs>
-  <Main v-if="store.state.Menu == 'Main'"></Main>
-  <Login v-if="store.state.Menu == 'Login'"></Login>
+    <About v-if="store.state.Menu == 'About'"></About>
+    <FindUs v-if="store.state.Menu == 'FindUs'"></FindUs>
+    <Main v-if="store.state.Menu == 'Main'"></Main>
+    <Login v-if="(store.state.Menu == 'Login' && store.state.User == null)"></Login>
+    <AdminPanel v-if="store.state.Menu == 'AdminPanel'"></AdminPanel>
 </template>
 
 <script lang="ts">
@@ -17,6 +18,7 @@ import FindUs from './components/FindUs/FindUs.vue'
 import About from './components/About/About.vue'
 import Catalogue from './components/Catalogue/Catalogue.vue'
 import Login from './components/Login/Login.vue'
+import AdminPanel from './components/AdminPanel/AdminPanel.vue'
 import { computed } from 'vue'
 
 @Options({
@@ -26,12 +28,12 @@ import { computed } from 'vue'
     About,
     FindUs,
     Main,
-    Login
+    Login,
+    AdminPanel
   },
 })
 export default class App extends Vue {
   store = useStore(key)
-  Menu = "Main"
 }
 </script>
 

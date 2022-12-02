@@ -1,0 +1,173 @@
+.tab-content {
+    padding: 5px
+}
+
+.cards-zone {
+    border: solid;
+    border-color: #333333;
+    padding: 5px;
+}
+
+.tabs-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.row-zone {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.Reading {
+    background-color: #CFF4FC !important;
+}
+
+.Watching {
+    background-color: #CFF4FC !important;
+}
+
+.On-hold {
+    background-color: #F79A63 !important;
+}
+
+.Plan-to-read {
+    background-color: #9256F3 !important;
+}
+
+.Plan-to-watch {
+    background-color: #9256F3 !important;
+}
+
+.Stoped {
+    background-color: #E85D75 !important;
+}
+
+.Finish {
+    background-color: #F779A4 !important;
+}
+
+.card-header .nav-pills,
+.card-header .nav-link {
+    padding: 5px;
+    color: #fff !important;
+}
+
+.card-header .nav-pills .nav-link.active,
+.card-header .nav-pills .show>.nav-link {
+    background-color: #fff !important;
+    color: black !important;
+}
+
+.card-body {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.manga-anime-header {
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 45px;
+}
+
+.manga-anime-footer {
+    background: rgba(0, 0, 0, 0.75);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 65px;
+
+    .manga-anime-scan-episode {
+        color: white;
+    }
+
+    .manga-anime-btn {
+
+        position: absolute;
+        bottom: 2px;
+        width: 100%;
+
+        .btn {
+            color: white;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: white;
+        }
+    }
+
+}
+
+.list-card {
+    padding-top: 2% !important;
+}
+
+.bouton-navBar {
+    padding: 10px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+header .navbar {
+    background-color: #2B2D42 !important;
+}
+
+.modal {
+    background-color: #859BB5 !important;
+    color: #859BB5 !important;
+}
+
+.modal-content {
+    background-color: #2B2D42 !important;
+    color: #859BB5 !important;
+}
+
+hr {
+    border: none !important;
+    height: 10px !important;
+    opacity: 1 !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-top: 8px solid #fff;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.section-title {
+    margin-left: 5px;
+    color: #fff;
+}
+
+.first-section {
+    margin-top: 20px;
+}
+
+.second-section {
+    margin-top: 50px;
+}
+
+.card {
+    width: 80%;
+}
+
+.card-img-top {
+    height: 350px;
+}
+
+.col {
+    padding-bottom: 50px;
+}
+
+.ajour {
+    position: absolute;
+    top: 0;
+}

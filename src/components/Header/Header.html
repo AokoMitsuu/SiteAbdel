@@ -17,5 +17,6 @@
 
         </div>
         <button type="button" class="btn btn-transparent" v-on:click="ChangeMenu('Login')" v-if="this.store.state.User == null">Connection</button>
+        <button type="button" class="btn btn-transparent" v-on:click="ChangeMenu('AdminPanel')" v-else-if="this.store.state.User.role == 0">Admin Panel</button>
     </div>
 </div>
