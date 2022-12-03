@@ -1,7 +1,27 @@
 .logo {
     height: 70px;
+    
   }
   
   .logoBuy {
     height: 35px;
+  }
+
+
+  button {
+    font-size:14px;
+    font-weight:700;
+    border: none;
+  }
+  .superNav {
+    font-size:13px;
+  }
+  .form-control {
+    outline:none !important;
+    box-shadow: none !important;
+  }
+  @media screen and (max-width:540px){
+    .centerOnMobile {
+      text-align:center;
+    }
   }

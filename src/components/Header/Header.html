@@ -1,22 +1,63 @@
-<div class="container">
-    <div class="row">
-        <div class="col-sm d-flex justify-content-left">
-            <img class="logo  " src="../../assets/vin.png" alt="">
-        </div>
-        <div class="col-sm d-flex justify-content-left">
-            <button type="button" class="btn btn-transparent" v-on:click="ChangeMenu('Main')">Accueil</button>
-            <button type="button" class="btn btn-transparent" v-on:click="ChangeMenu('Catalogue')">Catalogue</button>
-            <button type="button" class="btn btn-transparent" v-on:click="ChangeMenu('About')">A propos</button>
-            <button type="button" class="btn btn-transparent" v-on:click="ChangeMenu('FindUs')">Où nous trouver</button>
-        </div>
-        <div class="col-sm header-left d-flex justify-content-right">
-            <div style=" display: grid; margin-left: auto;">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <button type="button" class="btn btn-transparent">Acheter</button>
+    <div class="superNav border-bottom py-2 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+                
+              <span class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"><i class="fa-solid fa-envelope me-1 text-primary"></i><strong>mail@mail.com</strong></span>
+              <span class=""><i class="fa-solid fa-phone me-1 text-primary"></i> <strong>0652417552</strong></span>
             </div>
-
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
+              <span class="me-3 bg-light"><i class="fa-solid fa-truck bg-light text-muted me-1"></i><button  class="text-muted bg-light" href="#">Livraison</button></span>
+              <span class="me-3 bg-light"><i class="fa-solid fa-file bg-light text-muted me-2"></i><button  class="text-muted bg-light" href="#">Politique</button></span>
+            </div>
+          </div>
         </div>
-        <button type="button" class="btn btn-transparent" v-on:click="ChangeMenu('Login')" v-if="this.store.state.User == null">Connection</button>
-        <button type="button" class="btn btn-transparent" v-on:click="ChangeMenu('AdminPanel')" v-else-if="this.store.state.User.role == 0">Admin Panel</button>
-    </div>
-</div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+        <div class="container">
+          <button  class="navbar-brand bg-white " href="#"><i class="fa-solid bg-white fa-shop me-2"></i> <strong>VIN SHOP</strong></button>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+            <div class="input-group">
+              <span class="border-primary input-group-text bg-primary text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+              <input type="text" class="form-control border-primary" style="color:hsl(0, 0%, 0%)">
+              <button class="btn btn-primary text-white">Recherche</button>
+            </div>
+          </div>
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="ms-auto d-none d-lg-block">
+              <div class="input-group">
+                <span class="border-primary input-group-text bg-primary text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control border-primary" style="color:#000000">
+                <button class="btn btn-primary text-white">Recherche</button>
+              </div>
+            </div>
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <button  class="nav-link bg-white mx-2 text-uppercase active" aria-current="page" v-on:click="ChangeMenu('Main')">Accueil</button>
+              </li>
+              <li class="nav-item">
+                <button  class="nav-link bg-white mx-2 text-uppercase" v-on:click="ChangeMenu('Catalogue')">Catalogue</button>
+              </li>
+              <li class="nav-item">
+                <button  class="nav-link bg-white mx-2 text-uppercase" v-on:click="ChangeMenu('About')">A propos</button>
+              </li>
+              <li class="nav-item">
+                <button  class="nav-link bg-white mx-2 text-uppercase" v-on:click="ChangeMenu('FindUs')">Où nous trouver</button>
+              </li>
+
+            </ul>
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <button  class="nav-link bg-white mx-2 text-uppercase" ><i class="fa-solid fa-cart-shopping me-1"></i> Panier</button>
+              </li>
+              <li class="nav-item">
+                <button  class="nav-link bg-white mx-2 text-uppercase" v-on:click="ChangeMenu('Login')" v-if="this.store.state.User == null"><i class="fa-solid fa-circle-user me-1" ></i> Connexion</button>
+                <button type="button" class="btn bg-white btn-transparent" v-on:click="ChangeMenu('AdminPanel')" v-else-if="this.store.state.User.role == 0">Admin Panel</button>  
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
