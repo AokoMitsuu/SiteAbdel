@@ -26,10 +26,10 @@ export default class Login extends Vue {
                 this.Form = { Login: this.$cookies.get("User").Login, Password: this.$cookies.get("User").Password }
                 this.Login()
             } else {
-                this.store.state.Menu = "Main"
+                console.log("error")
             }
         } else {
-            this.store.state.Menu = "Main"
+            console.log("error")
         }
 
     }
