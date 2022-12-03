@@ -6,6 +6,7 @@
     <Main v-if="store.state.Menu == 'Main'"></Main>
     <Login v-if="(store.state.Menu == 'Login' && store.state.User == null)"></Login>
     <AdminPanel v-if="store.state.Menu == 'AdminPanel'"></AdminPanel>
+    <Footer></Footer>
 </template>
 
 <script lang="ts">
@@ -19,6 +20,7 @@ import About from './components/About/About.vue'
 import Catalogue from './components/Catalogue/Catalogue.vue'
 import Login from './components/Login/Login.vue'
 import AdminPanel from './components/AdminPanel/AdminPanel.vue'
+import Footer from './components/Footer/Footer.vue'
 import { computed } from 'vue'
 
 @Options({
@@ -29,6 +31,7 @@ import { computed } from 'vue'
     FindUs,
     Main,
     Login,
+    Footer,
     AdminPanel
   },
 })
@@ -39,8 +42,7 @@ export default class App extends Vue {
 
 <style>
 #app {
-  background-color: #303132 !important;
-  min-height: 100vh;
+
   overflow: hidden;
 }
 

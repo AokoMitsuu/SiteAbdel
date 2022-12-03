@@ -22,7 +22,7 @@
           <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
             <div class="input-group">
               <span class="border-primary input-group-text bg-primary text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
-              <input type="text" class="form-control border-primary" style="color:hsl(0, 0%, 0%)">
+              <input type="text" class="form-control border-primary" placeholder="produit..." style="color:hsl(0, 0%, 0%)">
               <button class="btn btn-primary text-white">Recherche</button>
             </div>
           </div>
@@ -30,22 +30,22 @@
             <div class="ms-auto d-none d-lg-block">
               <div class="input-group">
                 <span class="border-primary input-group-text bg-primary text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
-                <input type="text" class="form-control border-primary" style="color:#000000">
+                <input type="text" class="form-control border-primary" placeholder="produit..." style="color:#000000">
                 <button class="btn btn-primary text-white">Recherche</button>
               </div>
             </div>
             <ul class="navbar-nav ms-auto ">
               <li class="nav-item">
-                <button  class="nav-link bg-white mx-2 text-uppercase active" aria-current="page" v-on:click="ChangeMenu('Main')">Accueil</button>
+                <button  class="nav-link bg-white mx-2 text-uppercase" :class="{ active: store.state.Menu == 'Main'}" aria-current="page" v-on:click="ChangeMenu('Main')">Accueil</button>
               </li>
               <li class="nav-item">
-                <button  class="nav-link bg-white mx-2 text-uppercase" v-on:click="ChangeMenu('Catalogue')">Catalogue</button>
+                <button  class="nav-link bg-white mx-2 text-uppercase" :class="{ active: store.state.Menu == 'Catalogue'}" v-on:click="ChangeMenu('Catalogue')">Catalogue</button>
               </li>
               <li class="nav-item">
-                <button  class="nav-link bg-white mx-2 text-uppercase" v-on:click="ChangeMenu('About')">A propos</button>
+                <button  class="nav-link bg-white mx-2 text-uppercase" :class="{ active: store.state.Menu == 'About'}" v-on:click="ChangeMenu('About')">A propos</button>
               </li>
               <li class="nav-item">
-                <button  class="nav-link bg-white mx-2 text-uppercase" v-on:click="ChangeMenu('FindUs')">Où nous trouver</button>
+                <button  class="nav-link bg-white mx-2 text-uppercase" :class="{ active: store.state.Menu == 'FindUs'}" v-on:click="ChangeMenu('FindUs')">Où nous trouver</button>
               </li>
 
             </ul>
@@ -54,8 +54,8 @@
                 <button  class="nav-link bg-white mx-2 text-uppercase" ><i class="fa-solid fa-cart-shopping me-1"></i> Panier</button>
               </li>
               <li class="nav-item">
-                <button  class="nav-link bg-white mx-2 text-uppercase" v-on:click="ChangeMenu('Login')" v-if="this.store.state.User == null"><i class="fa-solid fa-circle-user me-1" ></i> Connexion</button>
-                <button type="button" class="btn bg-white btn-transparent" v-on:click="ChangeMenu('AdminPanel')" v-else-if="this.store.state.User.role == 0">Admin Panel</button>  
+                <button  class="nav-link bg-white mx-2 text-uppercase" :class="{ active: store.state.Menu == 'Login'}" v-on:click="ChangeMenu('Login')" v-if="this.store.state.User == null"><i class="fa-solid fa-circle-user me-1" ></i> Connexion</button>
+                <button type="button" class="btn bg-white btn-transparent" :class="{ active: store.state.Menu == 'AdminPanel'}" v-on:click="ChangeMenu('AdminPanel')" v-else-if="this.store.state.User.role == 0">Admin Panel</button>  
             </li>
             </ul>
           </div>
